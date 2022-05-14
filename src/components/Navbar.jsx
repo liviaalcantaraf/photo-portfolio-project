@@ -64,7 +64,7 @@ const Navbar = () => {
       <Container>
         <Wrapper>
           <Left>
-            <Logo>Alec P.</Logo>
+            <Logo>//AP.</Logo>
           </Left>
           <Right>
             <Menu>
