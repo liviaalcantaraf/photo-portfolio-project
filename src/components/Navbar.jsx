@@ -6,10 +6,15 @@ let Container = styled.div`
 `;
 
 let Wrapper = styled.div`
+  width: 100%;
   padding: 10px 20px;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
+  background: rgba(255, 255, 255, 0.782);
+  z-index: 20;
+  transition: background 0.2s ease-in-out;
 `;
 let Left = styled.div`
   width: 60%;
@@ -64,8 +69,8 @@ const Navbar = () => {
           <Right>
             <Menu>
               <MenuItem>Home</MenuItem>
+              <MenuItem>About</MenuItem>
               <MenuItem>Portfolio</MenuItem>
-              <MenuItem>About Me</MenuItem>
               <MenuItem>Contact</MenuItem>
             </Menu>
           </Right>
