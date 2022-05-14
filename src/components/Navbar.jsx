@@ -17,7 +17,6 @@ let Left = styled.div`
 let Logo = styled.h1`
   font-weight: bold;
   color: #363062;
-  text-decoration: underline #e9d5da;
 `;
 let Right = styled.div`
   width: 60%;
@@ -36,7 +35,7 @@ let MenuItem = styled.li`
   margin-right: 80px;
   font-size: 18px;
   font-weight: bold;
-  color: #827397;
+  color: #363062;
   cursor: pointer;
 
   ::before {
