@@ -14,14 +14,15 @@ let Left = styled.div`
   justify-content: center;
 `;
 let Title = styled.h1`
-  font-size: 60px;
-  width: 50%;
+  font-size: 70px;
+  width: 60%;
   color: #363062;
 `;
-let Desc = styled.p`
-  width: 50%;
-  font-size: 20px;
-  margin-top: 20px;
+
+let Subtitle = styled.p`
+  width: 60%;
+  font-size: 16px;
+  margin-top: 5px;
   color: #827397;
 `;
 let Right = styled.div`
@@ -40,7 +41,7 @@ const Intro = () => {
     <Container>
       <Left>
         <Title>Alexa Portland</Title>
-        <Desc>Photographer</Desc>
+        <Subtitle>Photographer | Working with amazing moments</Subtitle>
       </Left>
       <Right>
         <Image src="https://images.unsplash.com/photo-1512813498716-3e640fed3f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=424&q=80" />
