@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import Phone from "../img/phone.png";
 import Email from "../img/email.png";
 import Address from "../img/address.png";
 import styled from "styled-components";
+import { ThemeContext } from "../context";
 
 let Container = styled.div`
   height: 100vh;
@@ -121,6 +122,9 @@ let Button = styled.button`
 `;
 
 export const Contact = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("I'm looking foward to see our project together. See you soon!");
@@ -149,14 +153,30 @@ export const Contact = () => {
         </Left>
         <Right>
           <Form onSubmit={handleSubmit}>
-            <InputName type="text" placeholder="Name" name="user_name" />
+            <InputName
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Name"
+              name="user_name"
+            />
             <InputSubject
+              style={{ backgroundColor: darkMode && "#333" }}
               type="text"
               placeholder="Subject"
               name="user_subject"
             />
-            <InputEmail type="text" placeholder="Email" name="user_email" />
-            <TextArea rows="5" placeholder="Message" name="message" />
+            <InputEmail
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Email"
+              name="user_email"
+            />
+            <TextArea
+              style={{ backgroundColor: darkMode && "#333" }}
+              rows="5"
+              placeholder="Message"
+              name="message"
+            />
             <Button>Submit</Button>
           </Form>
         </Right>

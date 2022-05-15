@@ -2,3 +2,32 @@
   margin: 0px;
   font-family: "Varela Round", sans-serif;
 }
+
+.t {
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid #e9d5da;
+  background: rgba(255, 255, 255, 0.782);
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.t-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.t-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #e9d5da;
+  position: absolute;
+  cursor: pointer;
+}
