@@ -121,6 +121,16 @@ let Button = styled.button`
   border-radius: 3px;
 `;
 
+let Coded = styled.a`
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 150px;
+  color: #827397;
+  font-size: 12px;
+`;
+
 export const Contact = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
@@ -181,6 +191,9 @@ export const Contact = () => {
           </Form>
         </Right>
       </Wrapper>
+      <Coded href="https://github.com/liviaalcantaraf/photo-portfolio-project">
+        Open-souce code by Lívia A.
+      </Coded>
     </Container>
   );
 };

@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Toggle from "./components/Toggle";
 import { ThemeContext } from "./context";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const theme = useContext(ThemeContext);
@@ -18,8 +19,8 @@ function App() {
         color: darkMode && "white",
       }}
     >
-      <Toggle />
       <Navbar />
+      <Toggle />
       <Intro />
       <About />
       <Portfolio />
