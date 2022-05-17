@@ -21,7 +21,7 @@ let Left = styled.div`
 `;
 let Logo = styled.h1`
   font-weight: bold;
-  color: #363062;
+  color: #827397;
 `;
 let Right = styled.div`
   width: 60%;

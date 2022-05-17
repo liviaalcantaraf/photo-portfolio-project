@@ -15,7 +15,7 @@ let Texts = styled.div`
 `;
 let Title = styled.h1`
   font-size: 50px;
-  color: #4d4c7d;
+  color: #827397;
 `;
 let Desc = styled.p`
   margin: 20px 0px;

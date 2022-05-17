@@ -16,7 +16,7 @@ let Left = styled.div`
 let Title = styled.h1`
   font-size: 70px;
   width: 60%;
-  color: #363062;
+  color: #827397;
 `;
 
 let Subtitle = styled.p`

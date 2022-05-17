@@ -25,7 +25,7 @@ let Left = styled.div`
 let Title = styled.h1`
   font-size: 50px;
   width: 100%;
-  color: #363062;
+  color: #827397;
 `;
 let Info = styled.div`
   color: #827397;
@@ -114,7 +114,7 @@ let TextArea = styled.textarea`
 let Button = styled.button`
   border: none;
   padding: 15px;
-  background-color: #4d4c7d;
+  background-color: #827397;
   color: white;
   font-weight: 500;
   cursor: pointer;
@@ -138,7 +138,7 @@ export const Contact = () => {
           <Title>Let's discuss your project?</Title>
           <Info>
             <IconPhone>
-              <ImagePhone alt="" className="c-icon" />
+              <ImagePhone src={Phone} alt="" />
               +49 176 12345678
             </IconPhone>
             <IconMail>

@@ -25,7 +25,7 @@ let Right = styled.div`
 `;
 let Title = styled.h1`
   font-size: 50px;
-  color: #363062;
+  color: #827397;
 `;
 let Desc = styled.p`
   font-size: 20px;
