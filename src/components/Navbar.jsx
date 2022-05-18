@@ -81,7 +81,7 @@ let HambToggle = styled.div`
   @media screen and (max-width: 760px) {
     display: fixed;
     position: relative;
-    right: 280px;
+    right: 260px;
     padding-top: 10px;
     margin-left: 10px;
     z-index: 6;
