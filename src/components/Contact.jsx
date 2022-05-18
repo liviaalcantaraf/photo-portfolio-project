@@ -20,6 +20,7 @@ let Wrapper = styled.div`
   display: flex;
   @media screen and (max-width: 780px) {
     flex-direction: column;
+    padding: 0px 50px;
   }
 `;
 let Left = styled.div`
@@ -29,6 +30,9 @@ let Title = styled.h1`
   font-size: 50px;
   width: 100%;
   color: #827397;
+  @media screen and (max-width: 780px) {
+    font-size: 35px;
+  }
 `;
 let Info = styled.div`
   color: #827397;
@@ -39,6 +43,10 @@ let IconPhone = styled.div`
   margin: 50px 0px;
   font-weight: 300;
   width: 70%;
+  @media screen and (max-width: 780px) {
+    margin: 20px 0px;
+    width: 100%;
+  }
 `;
 let IconMail = styled.div`
   display: flex;
@@ -46,6 +54,10 @@ let IconMail = styled.div`
   margin: 50px 0px;
   font-weight: 300;
   width: 70%;
+  @media screen and (max-width: 780px) {
+    margin: 20px 0px;
+    width: 100%;
+  }
 `;
 let IconAddress = styled.div`
   display: flex;
@@ -53,6 +65,10 @@ let IconAddress = styled.div`
   margin: 50px 0px;
   font-weight: 300;
   width: 70%;
+  @media screen and (max-width: 780px) {
+    margin: 20px 0px;
+    width: 100%;
+  }
 `;
 let ImagePhone = styled.img`
   width: 30px;
@@ -80,6 +96,11 @@ let Right = styled.div`
 
 let Form = styled.form`
   margin-top: 50px;
+  @media screen and (max-width: 780px) {
+    margin-top: -20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
 let InputName = styled.input`
   width: 50%;

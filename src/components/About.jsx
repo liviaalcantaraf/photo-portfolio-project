@@ -5,6 +5,11 @@ let Container = styled.div`
   height: calc(100vh - 50px);
   display: flex;
   padding: 50px 80px;
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
 `;
 let Left = styled.div`
   width: 50%;
@@ -12,28 +17,44 @@ let Left = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 780px) {
+    width: 100%;
+  }
 `;
 let Image = styled.img`
   border-radius: 15px;
+  @media screen and (max-width: 780px) {
+    height: 40vh;
+  }
 `;
 let Right = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (max-width: 780px) {
+    margin-top: 30px;
+    width: 100%;
+  }
 `;
 let Title = styled.h1`
   font-size: 50px;
   color: #827397;
+  @media screen and (max-width: 780px) {
+    font-size: 40px;
+  }
 `;
 let Desc = styled.p`
   font-size: 20px;
   color: #827397;
   margin-top: 30px;
+  @media screen and (max-width: 780px) {
+    font-size: 15px;
+  }
 `;
 
 let Break = styled.p`
-  margin-top: 20px;
+  margin-top: 13px;
 `;
 
 const About = () => {

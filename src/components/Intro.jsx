@@ -27,6 +27,7 @@ let Left = styled.div`
 `;
 let Title = styled.h1`
   font-size: 70px;
+  width: 60%;
 
   color: #827397;
 
@@ -84,8 +85,8 @@ const Intro = () => {
     <Container>
       <Left>
         <Title>Alexa Portland</Title>
-        <Subtitle>Photographer</Subtitle>
         <Desc>Working with amazing moments</Desc>
+        <Subtitle>Photographer</Subtitle>
       </Left>
       <Right>
         <Image src="https://images.unsplash.com/photo-1512813498716-3e640fed3f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=424&q=80" />
