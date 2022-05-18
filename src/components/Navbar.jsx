@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { animateScroll as scroll } from "react-scroll";
+import { Link } from "react-router-dom";
 
 let Container = styled.div`
   height: 30px;
@@ -68,10 +70,18 @@ const Navbar = () => {
           </Left>
           <Right>
             <Menu>
-              <MenuItem>Home</MenuItem>
-              <MenuItem>About</MenuItem>
-              <MenuItem>Portfolio</MenuItem>
-              <MenuItem>Contact</MenuItem>
+              <Link to="/">
+                <MenuItem>Home</MenuItem>
+              </Link>
+              <Link to="/About">
+                <MenuItem>About</MenuItem>
+              </Link>
+              <Link to="/Portfolio">
+                <MenuItem>Portfolio</MenuItem>
+              </Link>
+              <Link to="/Contact">
+                <MenuItem>Contact</MenuItem>
+              </Link>
             </Menu>
           </Right>
         </Wrapper>

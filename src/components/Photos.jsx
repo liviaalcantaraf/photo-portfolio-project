@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 let Container = styled.div`
   width: 30%;
@@ -22,9 +23,11 @@ let Image = styled.img`
 const Photos = ({ img }) => {
   return (
     <Container>
-      <a href="#" target="_blank" rel="noreferrer">
-        <Image src={img} alt="" />
-      </a>
+      <Link to="Portfolio">
+        <a href="#" target="_blank" rel="noreferrer">
+          <Image src={img} alt="" />
+        </a>
+      </Link>
     </Container>
   );
 };
