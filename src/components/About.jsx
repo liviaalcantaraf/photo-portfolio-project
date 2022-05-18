@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ThemeContext } from "../context";
 
 let Container = styled.div`
   height: calc(100vh - 50px);
