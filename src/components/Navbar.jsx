@@ -6,6 +6,10 @@ import { useState } from "react";
 
 let Container = styled.div`
   height: 30px;
+  @media screen and (max-width: 760px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 let Wrapper = styled.div`
@@ -21,6 +25,9 @@ let Wrapper = styled.div`
 `;
 let Left = styled.div`
   width: 60%;
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
 `;
 let Logo = styled.h1`
   font-weight: bold;
@@ -34,6 +41,9 @@ let Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 760px) {
+    width: 50%;
+  }
 `;
 let Menu = styled.ul`
   display: flex;
@@ -71,7 +81,7 @@ let HambToggle = styled.div`
   @media screen and (max-width: 760px) {
     display: fixed;
     position: relative;
-    right: 200px;
+    right: 280px;
     padding-top: 10px;
     margin-left: 10px;
     z-index: 6;

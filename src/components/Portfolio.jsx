@@ -22,14 +22,14 @@ let Title = styled.h1`
   font-size: 50px;
   color: #827397;
   @media screen and (max-width: 780px) {
-    font-size: 45px;
+    font-size: 40px;
   }
 `;
 let Desc = styled.p`
   margin: 20px 0px;
   color: #827397;
   @media screen and (max-width: 780px) {
-    font-size: 18px;
+    font-size: 15px;
   }
 `;
 let Gallery = styled.div`
@@ -39,7 +39,7 @@ let Gallery = styled.div`
   justify-content: space-between;
   @media screen and (max-width: 780px) {
     position: relative;
-    left: 100px;
+    left: 70px;
   }
 `;
 

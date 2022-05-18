@@ -8,7 +8,8 @@ let Container = styled.div`
 
   @media screen and (max-width: 780px) {
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 100px;
+    width: 100%;
   }
 `;
 let Left = styled.div`
@@ -17,12 +18,8 @@ let Left = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 480px) {
-    padding: 10px;
+  @media screen and (max-width: 780px) {
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
   }
 `;
 let Title = styled.h1`
@@ -33,8 +30,6 @@ let Title = styled.h1`
 
   @media screen and (max-width: 780px) {
     font-size: 60px;
-    position: relative;
-    left: 110px;
     text-align: center;
   }
 `;
@@ -49,7 +44,7 @@ let Subtitle = styled.p`
     width: 100%;
     position: relative;
     top: 380px;
-    left: 260px;
+    left: 170px;
   }
 `;
 
@@ -74,8 +69,8 @@ let Image = styled.img`
   border-radius: 15px;
   @media screen and (max-width: 780px) {
     position: relative;
-    left: 130px;
-    width: 180%;
+    left: 60px;
+    width: 200%;
     margin-top: -30px;
   }
 `;
