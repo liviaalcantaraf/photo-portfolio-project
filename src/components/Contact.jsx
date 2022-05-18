@@ -18,6 +18,9 @@ let Background = styled.div`
 let Wrapper = styled.div`
   padding: 50px;
   display: flex;
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+  }
 `;
 let Left = styled.div`
   flex: 1;

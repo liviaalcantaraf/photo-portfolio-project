@@ -10,6 +10,10 @@ let Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  @media screen and (max-width: 780px) {
+    padding: 10px;
+    margin-top: 25px;
+  }
 `;
 let Texts = styled.div`
   width: 65%;
@@ -17,16 +21,26 @@ let Texts = styled.div`
 let Title = styled.h1`
   font-size: 50px;
   color: #827397;
+  @media screen and (max-width: 780px) {
+    font-size: 45px;
+  }
 `;
 let Desc = styled.p`
   margin: 20px 0px;
   color: #827397;
+  @media screen and (max-width: 780px) {
+    font-size: 18px;
+  }
 `;
 let Gallery = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media screen and (max-width: 780px) {
+    position: relative;
+    left: 100px;
+  }
 `;
 
 const Portfolio = () => {

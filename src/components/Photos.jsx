@@ -9,6 +9,11 @@ let Container = styled.div`
   border: 2px solid rgb(243, 242, 242);
   border-radius: 10px;
   overflow: hidden;
+  @media screen and (max-width: 780px) {
+    width: 60%;
+    height: 25vh;
+    align-items: center;
+  }
 `;
 
 let Image = styled.img`
