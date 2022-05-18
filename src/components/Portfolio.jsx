@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { photos } from "../data";
 import Photos from "./Photos";
@@ -38,12 +39,13 @@ const Portfolio = () => {
           amazing project together.
         </Desc>
       </Texts>
-
-      <Gallery>
-        {photos.map((item) => (
-          <Photos key={item.id} img={item.img} />
-        ))}
-      </Gallery>
+      <Link to="Portfolio">
+        <Gallery>
+          {photos.map((item) => (
+            <Photos key={item.id} img={item.img} />
+          ))}
+        </Gallery>
+      </Link>
     </Container>
   );
 };

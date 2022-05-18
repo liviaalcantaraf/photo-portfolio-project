@@ -31,3 +31,12 @@
   position: absolute;
   cursor: pointer;
 }
+
+@media screen and (max-width: 780px) {
+  .t {
+    position: fixed;
+    top: 5px;
+    right: 40px;
+    margin-top: 10px;
+  }
+}

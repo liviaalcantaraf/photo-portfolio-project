@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-
 import { Link } from "react-router-dom";
+import Hamburger from "./Hamburger";
+import { useState } from "react";
 
 let Container = styled.div`
   height: 30px;
@@ -24,6 +25,9 @@ let Left = styled.div`
 let Logo = styled.h1`
   font-weight: bold;
   color: #827397;
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
 `;
 let Right = styled.div`
   width: 60%;
@@ -60,7 +64,26 @@ let MenuItem = styled.li`
   }
 `;
 
+let HambToggle = styled.div`
+  display: none;
+  z-index: 6;
+
+  @media screen and (max-width: 760px) {
+    display: fixed;
+    position: relative;
+    right: 200px;
+    padding-top: 10px;
+    margin-left: 10px;
+    z-index: 6;
+  }
+`;
+
 const Navbar = () => {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
   return (
     <div>
       <Container>
@@ -68,24 +91,50 @@ const Navbar = () => {
           <Left>
             <Logo>//AP.</Logo>
           </Left>
+          <HambToggle onClick={toggleHamburger}>
+            <Hamburger isOpen={hamburgerOpen} />
+          </HambToggle>
           <Right>
-            <Menu>
-              <Link to="/">
-                <MenuItem>Home</MenuItem>
-              </Link>
-              <Link to="/About">
-                <MenuItem>About</MenuItem>
-              </Link>
-              <Link to="/Portfolio">
-                <MenuItem>Portfolio</MenuItem>
-              </Link>
-              <Link to="/Contact">
-                <MenuItem>Contact</MenuItem>
-              </Link>
+            <Menu className="navigation">
+              <ul>
+                <Link to="/">
+                  <MenuItem>Home</MenuItem>
+                </Link>
+                <Link to="/About">
+                  <MenuItem>About</MenuItem>
+                </Link>
+                <Link to="/Portfolio">
+                  <MenuItem>Portfolio</MenuItem>
+                </Link>
+                <Link to="/Contact">
+                  <MenuItem>Contact</MenuItem>
+                </Link>
+              </ul>
             </Menu>
           </Right>
         </Wrapper>
       </Container>
+      <style jsx>{`
+        @media (max-width: 767px) {
+          .navigation ul {
+            display: ${hamburgerOpen ? "inline" : "none"};
+            position: relative;
+            right: 160px;
+            height: 40vh;
+            width: 50%;
+            margin-top: 50px;
+            position: fixed;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.782);
+            padding: 10px 22px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+          }
+        }
+      `}</style>
     </div>
   );
 };

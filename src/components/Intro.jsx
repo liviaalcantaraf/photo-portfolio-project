@@ -5,6 +5,10 @@ let Container = styled.div`
   height: calc(100vh - 50px);
   display: flex;
   padding: 20px;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 let Left = styled.div`
   width: 60%;
@@ -12,11 +16,19 @@ let Left = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 480px) {
+    height: 50%;
+  }
 `;
 let Title = styled.h1`
   font-size: 70px;
   width: 60%;
   color: #827397;
+
+  @media screen and (max-width: 480px) {
+    font-size: 50px;
+    width: 50%;
+  }
 `;
 
 let Subtitle = styled.p`
@@ -24,6 +36,10 @@ let Subtitle = styled.p`
   font-size: 16px;
   margin-top: 5px;
   color: #827397;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    width: 60%;
+  }
 `;
 let Right = styled.div`
   width: 30%;
@@ -34,6 +50,9 @@ let Image = styled.img`
   display: flex;
   top: 50px;
   border-radius: 15px;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const Intro = () => {
