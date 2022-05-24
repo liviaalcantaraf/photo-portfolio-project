@@ -63,6 +63,26 @@ const Gallery = () => {
       imgSrc:
         "https://images.unsplash.com/photo-1542513217-0b0eedf7005d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464",
     },
+    {
+      id: 13,
+      imgSrc:
+        "https://images.unsplash.com/photo-1653185063454-3a6532673066?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387",
+    },
+    {
+      id: 14,
+      imgSrc:
+        "https://images.unsplash.com/photo-1653162143209-a6f100377faf?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464",
+    },
+    {
+      id: 15,
+      imgSrc:
+        "https://images.unsplash.com/photo-1551672449-d49274816749?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387",
+    },
+    {
+      id: 16,
+      imgSrc:
+        "https://images.unsplash.com/photo-1630247008103-7b6bffe8d21b?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387",
+    },
   ];
 
   const [model, setModel] = useState(false);
@@ -75,6 +95,7 @@ const Gallery = () => {
 
   return (
     <>
+      <h1 className="title">My portfolio</h1>
       <div className={model ? "model open" : "model"}>
         <img src={tempimgSrc} />
         <h1 className="close" onClick={() => setModel(false)}>

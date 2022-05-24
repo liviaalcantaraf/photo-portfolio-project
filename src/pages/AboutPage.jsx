@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../components/About";
+import { Contact } from "../components/Contact";
 import Navbar from "../components/Navbar";
 import Toggle from "../components/Toggle";
 
@@ -9,6 +10,7 @@ const AboutPage = () => {
       <Navbar />
       <Toggle />
       <About />
+      <Contact />
     </div>
   );
 };

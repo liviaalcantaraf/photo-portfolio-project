@@ -48,8 +48,8 @@ const Portfolio = () => {
       <Texts>
         <Title>My portfolio</Title>
         <Desc>
-          You can meet my work a little bit here and think about our next
-          amazing project together.
+          You can meet my work a little bit and think about our next amazing
+          project together.
         </Desc>
       </Texts>
       <Link to="Portfolio">
