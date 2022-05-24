@@ -1,6 +1,6 @@
 import React from "react";
+import Gallery from "../components/Gallery";
 import Navbar from "../components/Navbar";
-import Portfolio from "../components/Portfolio";
 import Toggle from "../components/Toggle";
 
 const PortfolioPage = () => {
@@ -8,7 +8,7 @@ const PortfolioPage = () => {
     <div>
       <Navbar />
       <Toggle />
-      <Portfolio />
+      <Gallery />
     </div>
   );
 };
